@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description
+ rdf:about="http://www.recshop.fake/cd/Empire Burlesque">
+  <cd:artist>Bob Dylan</cd:artist>
+  <cd:country>USA</cd:country>
+  <cd:company>Columbia</cd:company>
+  <cd:price>10.90</cd:price>
+  <cd:year>1985</cd:year>
+</rdf:Description>
+
+</rdf:RDF>
+
+
+
+
+
+<Activity Class rdf:ID="activityID">
+	<Domain rdf:resource="deviceType"/>
+	<HasInput>
+		<InputMessage rdf:ID="input1" rdf:datatype="dataType1"/>
+	</HasInput>
+	<HasOutput>
+		<OutputMessage rdf:ID="output1" rdf:datatype="dataType1"/>
+		<OutputMessage rdf:ID="output2" rdf:datatype="dataType2"/>
+	</HasOutput>
+	<HasFunctionality>
+		<BusinessFunctionality rdf:ID="functionality1">
+			<Operation rdf:ID="op1"/>
+			<Resource rdf:ID="resource1"/>
+		</BusinessFunctionality>
+	</HasFunctionality>
+</Activity Class>

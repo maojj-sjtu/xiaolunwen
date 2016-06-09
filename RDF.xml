@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description
+ rdf:about="http://www.recshop.fake/cd/Empire Burlesque">
+  <cd:artist>Bob Dylan</cd:artist>
+  <cd:country>USA</cd:country>
+  <cd:company>Columbia</cd:company>
+  <cd:price>10.90</cd:price>
+  <cd:year>1985</cd:year>
+</rdf:Description>
+
+</rdf:RDF>
+
+
+
+
+
+<Activity Class rdf:ID="activityID">
+	<Domain rdf:resource="deviceType"/>
+	<HasInputMessage>
+		<InputMessage rdf:ID="input1" rdf:datatype="dataType1"/>
+	</HasInputMessage>
+	<HasOutputMessage>
+		<OutputMessage rdf:ID="output1" rdf:datatype="dataType1"/>
+		<OutputMessage rdf:ID="output2" rdf:datatype="dataType2"/>
+	</HasOutputMesage>
+	<HasFunctionality>
+		<BusinessFunctionality rdf:ID="functionality1">
+			<Operation rdf:ID="op1"/>
+			<Resource rdf:ID="resource1"/>
+		</BusinessFunctionality>
+	</Business>
+</Activity Class>
+
+<Activity Class rdf:ID="reserveCharging">
+	<Domain rdf:resource="#ChargingPill"/>
+	<HasInputMessage>
+		<InputMessage rdf:ID="startTime" rdf:datatype="Date"/>
+		<InputMessage rdf:ID="endTime" rdf:datatype="Date"/>
+	</HasInputMessage>
+	<HasOutputMessage>
+		<OutputMessage rdf:ID="result" rdf:datatype="Boolean"/>
+		<OutputMessage rdf:ID="detail" rdf:datatype="String"/>
+	</HasOutputMesage>
+	<HasFunctionality>
+		<BusinessFunctionality rdf:ID="createReservation">
+			<Operation rdf:ID="create"/>
+			<Resource rdf:ID="reservation"/>
+		</BusinessFunctionality>
+	</Business>
+</Activity Class>
+
+
+
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://wadl.dev.java.net/2009/02 wadl.xsd" 
+  xmlns:tns="urn:yahoo:yn" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns:yn="urn:yahoo:yn" 
+  xmlns:ya="urn:yahoo:api" 
+  xmlns="http://wadl.dev.java.net/2009/02"> 
+   <resources base="http://api.search.yahoo.com/NewsSearchService/V1/"> 
+     <resource path="newsSearch"> 
+       <method name="GET" id="search"> 
+         <request> 
+           <param name="appid" type="xsd:string" 
+             style="query" required="true"/> 
+           <param name="query" type="xsd:string" 
+             style="query" required="true"/> 
+           <param name="type" style="query" default="all"> 
+             <option value="all"/> 
+             <option value="any"/> 
+             <option value="phrase"/> 
+           </param> 
+         </request> 
+         <response status="200"> 
+           <representation mediaType="application/xml" 
+             element="yn:ResultSet"/> 
+         </response> 
+         <response status="400"> 
+           <representation mediaType="application/xml" 
+             element="ya:Error"/> 
+         </response> 
+       </method> 
+     </resource> 
+   </resources>
+ </application>
+
+
+
+<GeneralService id="">
+  <interface path="" method="">
+    <request> 
+      <param name="" type="" required=""/> 
+    </request> 
+    <response> 
+      <param name="" type="" required=""/> 
+    </response> 
+  </interface>
+  <composition>
+    <invocation url="" method="">
+      <request>
+        <param name="" type="" required="" mapping=""/>
+      </request>
+      <response>
+        <param name="" type="" required="" mapping=""/>
+      </response>
+    </invocation>
+  </composition>
+</GeneralService>
