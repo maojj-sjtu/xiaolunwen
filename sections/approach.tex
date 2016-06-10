@@ -30,7 +30,7 @@ Taking the charging pill as an example, an activity description model instance a
 % where an .eps filename suffix will be assumed under latex, 
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 %via \DeclareGraphicsExtensions.
-\caption{Sample description of a reservation activity.}
+\caption{A graphical modeling tool for the activity description model.}
 \label{fig_eclipseplugin}
 \end{figure}
 
@@ -81,7 +81,7 @@ Due to the limitation of performance in smart devices, we can assume that there 
   					   \State $SIM_{si} \leftarrow Sim(R_f,R_{si}) \times Sim(O_f,O_{si})$ //$Sim(a,b)$ is the API to calculate the similarity between $a$ and $b$
 				   \EndFor
 				   \State Let $k$ be the index of the maximum similarity in $SIM$
-				   \Return service $s_k$ 
+				   \State\Return service $s_k$ 
         \end{algorithmic}
         \label{al_matching}
  \end{algorithm}
@@ -143,6 +143,7 @@ A basic concept of the general service model is shown in fig.~\ref{fig_generalse
             		\State generate a new HTTP request with interface in $inv_i$ and parameters in $IP$
             		\State set up the mapping between output $OP$ and content in HTTP response
             \EndFor
+            \State
             \Return the source code of the service
         \end{algorithmic}
         \label{al_generating}

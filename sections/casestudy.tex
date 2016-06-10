@@ -1,2 +1,30 @@
 \section{Case Study}
 \label{CaseStudy}
+In this section, a case study is introduced to verify the feasibility and effectiveness of the approaches above. We construct a prototype system, ICPSP(Intelligent Charging Pile Sharing Platform), to illustrate a typical application of our framework. 
+
+As a kind of WoT equipment, intelligent charging pile is connected to the Internet through WIFI or GPRS, offering RESTful services as operation interfaces. In China, charging pile sharing is an emerging area. The owner can make his private charging pile open to the public, and the public can charge their car by paying a certain fee to the owner. The sharing platform brings a win-win pattern, as the lack of public charging pile can be alleviated and the owner can cover the cost of building the charging pile through the income. 
+
+A brief process of charging through the sharing platform has following steps:
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\item When a driver need to charge his car, he can open the APP on his smart phone to fetch all the candidate charging piles nearby. 
+\item Then, he can choose a pile and check the detail information of it, including suitable car type, available time, charging fee and etc. 
+\item If the pile is suitable, he can make a reservation in his APP. 
+\item After arriving the charging pile, he can scan the barcode on the charging pile to start charging. 
+\item When the charging is over, he can stop the charging in his APP and get the bill to pay. 
+\end{itemize}
+
+During the charging process, several device services are used to perform business functionalities such as making reservation and generating bill. However, as there are hundreds of different charging pile models in the market, how to adapt the business process to all those models is a great challenge. 
+
+Based on our framework, we designed and implemented a sharing platform, ICPSP, which has a strong adaptability for the cross-devices process reuse. 
+
+\subsection{Application of the framework}
+Reviewing the business process of charging, we found that most activities in the process are related to one or more device services. Therefore, with the help of our Eclipse modeling plugin, we have described those activities in the activity description model. An example of those descriptions is shown in Fig.~\ref{fig_activitydescriptionmodeldemo}. 
+
+When a pile owner want to register and 
+
+
+
+\subsection{Implementation of the system}
