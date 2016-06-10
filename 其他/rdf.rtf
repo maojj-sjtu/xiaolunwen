@@ -50,4 +50,30 @@
        </method> \
      </resource> \
    </resources>\
- </application>}
+ </application>\
+\
+\
+\
+<GeneralService id="reserveCharging">\
+  <interface path="/reservation/create" method="PUT">\
+    <request> \
+      <param id="input1" name="startTime" type="date" required="true"/> \
+      <param id="input2" name="endTime" type="date" required="true"/> \
+    </request> \
+    <response> \
+      <param id="output1" name="result" type="boolean" required="true"/> \
+      <param id="output2" name="detail" type="string" required="false"/> \
+    </response> \
+  </interface>\
+  <composition>\
+    <invocation url="/order" method="PUT">\
+      <request>\
+        <param name="begin" type="date" required="true" mapping="input1"/> \
+        <param name="end" type="date" required="true" mapping="input2"/> \
+      </request>\
+      <response>\
+        <param name="result" type="boolean" required="true" mapping="output1"/>\
+      </response>\
+    </invocation>\
+  </composition>\
+</GeneralService>}

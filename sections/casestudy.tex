@@ -21,10 +21,23 @@ During the charging process, several device services are used to perform busines
 Based on our framework, we designed and implemented a sharing platform, ICPSP, which has a strong adaptability for the cross-devices process reuse. 
 
 \subsection{Application of the framework}
-Reviewing the business process of charging, we found that most activities in the process are related to one or more device services. Therefore, with the help of our Eclipse modeling plugin, we have described those activities in the activity description model. An example of those descriptions is shown in Fig.~\ref{fig_activitydescriptionmodeldemo}. 
+Reviewing the business process of charging, we found that most activities in the process are related to one or more device services. Therefore, with the help of our Eclipse modeling plugin, we have described those activities in the activity description model. An example of those descriptions is introduced in Fig.~\ref{fig_activitydescriptionmodeldemo}. 
 
-When a pile owner want to register and 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=1.0\linewidth]{./graph/generalservicedemo}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+%via \DeclareGraphicsExtensions.
+\caption{An example of general service model.}
+\label{fig_generalservicedemo}
+\end{figure}
 
+When a pile owner want to register and share his pile on our platform, the WADL documents of device services should be uploaded. With those descriptions, our matching algorithm is exectued to generate the general service models. Fig.~\ref{fig_generalservicedemo} serves as an example of a general service model.
+In the model, the $invocation$ node presents a device service interface for the functionality of reserving charging, which is bound to the general "/reservation/create" service. 
 
+Based on the sample model, source code of the general service can be generated, which is shown in Fig.~\ref{fig_generalservicedemo}. After the general services are deployed on the pile, the pile is now available to the public. 
+
+When a user calls a general service, the general service will help the user to invoke real services on the device. Consequently, our general service offers a device-independent interface to users, which hide all the device services from the user. 
 
 \subsection{Implementation of the system}
