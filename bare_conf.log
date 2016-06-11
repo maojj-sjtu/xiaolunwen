@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.25)  10 JUN 2016 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.25)  11 JUN 2016 19:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,8 +493,21 @@ File: ./graph/generalservicedemo.png Graphic file (type png)
 <use ./graph/generalservicedemo.png>
 Package pdftex.def Info: ./graph/generalservicedemo.png used on input line 28.
 (pdftex.def)             Requested size: 252.0pt x 187.69687pt.
-) (./sections/conclusion.tex)
-(./bare_conf.bbl)
+
+<./graph/prototype1.png, id=37, 613.3314pt x 330.9966pt>
+File: ./graph/prototype1.png Graphic file (type png)
+
+<use ./graph/prototype1.png>
+Package pdftex.def Info: ./graph/prototype1.png used on input line 48.
+(pdftex.def)             Requested size: 252.0pt x 135.99231pt.
+ <./graph/app.png, id=39, 905.3825pt x 815.045pt>
+File: ./graph/app.png Graphic file (type png)
+
+<use ./graph/app.png>
+Package pdftex.def Info: ./graph/app.png used on input line 58.
+(pdftex.def)             Requested size: 252.0pt x 226.85545pt.
+) (./sections/conclusion.tex) (./bare_conf.bbl [6 <./graph/generalservicedemo.p
+ng> <./graph/prototype1.png> <./graph/app.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -506,31 +519,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6 <./graph/generalservicedemo.png>] (./bare_conf.aux) ) 
+[7
+
+] (./bare_conf.aux) ) 
 Here is how much of TeX's memory you used:
- 4655 strings out of 493089
- 67158 string characters out of 6134842
- 144393 words of memory out of 5000000
- 8044 multiletter control sequences out of 15000+600000
+ 4667 strings out of 493089
+ 67390 string characters out of 6134842
+ 144409 words of memory out of 5000000
+ 8054 multiletter control sequences out of 15000+600000
  37977 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  38i,8n,23p,1603b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/201
-5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
-mbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (6 pages, 904741 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bare_conf.pdf (7 pages, 1724053 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
