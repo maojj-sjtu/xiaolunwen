@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.25)  10 JUN 2016 20:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.25)  13 JUN 2016 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1347,7 +1347,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.13 \begin{figure}
-                   [!b]
+                   [!t]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1360,13 +1360,13 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.13 \begin{figure}[
-                    !b]
+                    !t]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ! in font nullfont!
-Missing character: There is no b in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.15 \includegraphics

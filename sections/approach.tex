@@ -10,7 +10,7 @@ To address such limitations, a more abstract and more generate workflow definiti
 	{AD} = \textless\textbf{DM}, \textbf{IM}, \textbf{OM}, \textbf{BF}\textgreater
 \end{equation}where \textbf{DM}, \textbf{IM}, \textbf{OM}, \textbf{BF} denote domain, input messages, output messages, and business functionalities. Domain represents the device environment of current activity. Input messages and output messages contain variables with identity and data type. Business functionalities are consist of several verb-object constructions, which describe the business activity from a resource and operation perspective. 
 
-\begin{figure}[!b]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=1.0\linewidth]{./graph/activitydescriptionmodeldemo}
 % where an .eps filename suffix will be assumed under latex, 
@@ -22,9 +22,7 @@ To address such limitations, a more abstract and more generate workflow definiti
 
 In lots of semantic based service composition technologies, researchers perfer to take advantage of Input, Output, Pre-condition, Effect(IOPE) as the basis of service description and the critical parameters of the service matchmaking calculation\cite{syu2012survey}\cite{lee2013service}. However, in our model, we choose the simpler verb-object construction instead of the Pre-condition and Effect(PE), because: (1) Most of the RESTful Web Services in WoT are simple resource operations; (2) Defining a PE is much more sophisticated than defining a verb-object construction; (3) To campare with the semantic similarity calculation(between the functionality and the resource URL), the matchmaking calculation on PE is inefficiency. 
 
-Taking the charging pill as an example, an activity description model instance about the "reserveCharging" activity is shown in Fig.~\ref{fig_activitydescriptionmodeldemo}. The core resource operation of this activity is creating a reservation for a charging pill, which takes $startTime$ and $endTime$ as constructor arguments, and $result$ and $detail$ are returned to show whether the create operation is success or not and a detailed reason for the failure. 
-
-\begin{figure}[!t]
+\begin{figure}[!b]
 \centering
 \includegraphics[width=1.0\linewidth]{./graph/eclipseplugin}
 % where an .eps filename suffix will be assumed under latex, 
@@ -33,6 +31,8 @@ Taking the charging pill as an example, an activity description model instance a
 \caption{A graphical modeling tool for the activity description model.}
 \label{fig_eclipseplugin}
 \end{figure}
+
+Taking the charging pill as an example, an activity description model instance about the "reserveCharging" activity is shown in Fig.~\ref{fig_activitydescriptionmodeldemo}. The core resource operation of this activity is creating a reservation for a charging pill, which takes $startTime$ and $endTime$ as constructor arguments, and $result$ and $detail$ are returned to show whether the create operation is success or not and a detailed reason for the failure. 
 
 Also, we try to provide a convenient and efficient way for users to specify their workflow in our model. As is shown in Fig.~\ref{fig_eclipseplugin}, a graphical modeling tool is afforded in the form of an Eclipse plugin. With such plugin, users can create an activity description model file for a business activity, drag and drop model nodes to the canvas, and fulfil the properties in an editing frame, just like defining a BPEL schema with the BPEL Designer for Eclipse. 
 
@@ -113,11 +113,7 @@ Nevertheless, even if the representation is different, the data type and the sem
 \end{equation}
 where $t_1$ and $t_2$ are the data types of parameter description $P_1$ and $P_2$, and $n_1$ and $n_2$ are name of two parameters. A metrix can be predefined to check whether two data types are analogous(e.g., string and varchar are analogous but integer and date are not).
 
-As the matching degree of two parameter description is measured, we can now obtain the parameter matching result between our activity description and practical device services. 
-
-In order to generate the device-independent service, we propose a general service model to express the composition of the services that match the business functionalities in an activity. 
-
-\begin{figure}[!t]
+\begin{figure}[!b]
 \centering
 \includegraphics[width=1.0\linewidth]{./graph/generalservicemodel}
 % where an .eps filename suffix will be assumed under latex, 
@@ -126,6 +122,10 @@ In order to generate the device-independent service, we propose a general servic
 \caption{Conception of the general service model.}
 \label{fig_generalservice}
 \end{figure}
+
+As the matching degree of two parameter description is measured, we can now obtain the parameter matching result between our activity description and practical device services. 
+
+In order to generate the device-independent service, we propose a general service model to express the composition of the services that match the business functionalities in an activity. 
 
 A basic concept of the general service model is shown in fig.~\ref{fig_generalservice}. Structurally, the model is organized in two parts. The first part is the interface information of the general service, which defines the API for the composited service that fulfil the business activity. Considering the device-independency, the interface information is generated from the activity description model, including the URL path, the HTTP request method and the description of request and response parameters. The other one is the composition part. In this part, candidate services are listed with details about how to invoke the service and where to find the parameters. 
 
