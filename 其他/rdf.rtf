@@ -76,4 +76,27 @@
       </response>\
     </invocation>\
   </composition>\
-</GeneralService>}
+</GeneralService>\
+\
+\
+app.put('reservation/create',function(req, res)\{\
+    // the api options\
+    var options = \{\
+        host : '192.168.1.1',\
+        port : '8080',\
+        path : '/order?begin='+req.query.startTime+'&end='+req.query.endTime,\
+        method : 'PUT'\
+    \};\
+    var reqPut = http.request(options, function(resPut) \{\
+        resPut.on('data', function(d) \{\
+    	    if(d.statusCode == 200) \{\
+	        var data = \{result:d.result, detail:\'92\'92\}\
+                res.send(200, JSON.stringify(data));\
+             \}\
+             else \{\
+    		  res.send(500, \'93error\'94);\
+             \}\
+         \});\
+    \});\
+    reqPut.end();\
+\});}

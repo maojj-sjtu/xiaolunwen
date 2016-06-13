@@ -33,17 +33,20 @@ Reviewing the business process of charging, we found that most activities in the
 \label{fig_generalservicedemo}
 \end{figure}
 
+\begin{figure}[!b]
+\centering
+\includegraphics[width=1.0\linewidth]{./graph/sourcecode}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+%via \DeclareGraphicsExtensions.
+\caption{Source code of a general service.}
+\label{fig_sourcecode}
+\end{figure}
+
 When a pile owner want to register and share his pile on our platform, the WADL documents of device services should be uploaded. With those descriptions, our matching algorithm is exectued to generate the general service models. Fig.~\ref{fig_generalservicedemo} serves as an example of a general service model.
 In the model, the $invocation$ node presents a device service interface for the functionality of reserving charging, which is bound to the general "/reservation/create" service. 
 
-Based on the sample model, source code of the general service can be generated, which is shown in Fig.~\ref{fig_generalservicedemo}. After the general services are deployed on the pile, the pile is now available to the public. 
-
-When a user calls a general service, the general service will help the user to invoke real services on the device. Consequently, our general service offers a device-independent interface to users, which hide all the device services from the user. 
-
-\subsection{Implementation of the system}
-EVER is consist of four parts: center server, web site, App and intelligent charging pile. The pile provides RESTful services for the device resources. The center server is in charge of the other APIs of the system. The web site offers user interface for the management of the intelligent charging piles, such as updating the pile state or checking the usage record. Fig.~\ref{fig_prototype1} presents the web page for sharing a new charging pile. The App provides the main charging business. Users can make the reservation, control the charging and pay for bill on the App. The reservation and charging pages of the App is shown in Fig.~\ref{fig_app}. 
-
-\begin{figure}[!t]
+\begin{figure}[!b]
 \centering
 \includegraphics[width=1.0\linewidth]{./graph/prototype1}
 % where an .eps filename suffix will be assumed under latex, 
@@ -62,4 +65,13 @@ EVER is consist of four parts: center server, web site, App and intelligent char
 \caption{Screenshots of the App.}
 \label{fig_app}
 \end{figure}
+
+Based on the sample model, source code of the general service can be generated, which is shown in Fig.~\ref{fig_sourcecode}. After the general services are deployed on the pile, the pile is now available to the public. 
+
+When a user calls a general service, the general service will help the user to invoke real services on the device. Consequently, our general service offers a device-independent interface to users, which hide all the device services from the user. 
+
+\subsection{Implementation of the system}
+EVER is consist of four parts: center server, web site, App and intelligent charging pile. The pile provides RESTful services for the device resources. The center server is in charge of the other APIs of the system. The web site offers user interface for the management of the intelligent charging piles, such as updating the pile state or checking the usage record. Fig.~\ref{fig_prototype1} presents the web page for sharing a new charging pile. The App provides the main charging business. Users can make the reservation, control the charging and pay for bill on the App. The reservation and charging pages of the App is shown in Fig.~\ref{fig_app}. 
+
+
 
